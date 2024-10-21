@@ -1,0 +1,36 @@
+
+body {
+    font-family: 'Courier New', monospace;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    background-color: black;
+    display: flex;
+    height: 100vh; /*deixa o tamanho da pagina completa*/
+    margin: 0;
+    padding: 0;
+    border: 15px solid;
+    border-image: linear-gradient(0deg, #ff00ff, #00ff00) 1;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+    text-align: center;
+}
+
+.start_button {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
