@@ -18,19 +18,24 @@ body {
     width: 90%;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
 }
+
 h1 {
     text-align: center;
     color: #ff00ff;
     text-shadow: 0 0 10px #ff00ff;
 }
+
 .question {
     margin-bottom: 10px;
 }
+
 .options {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
+    text-align: center; /* Para alinhar o texto*/
 }
+
 .option {
     background-color: #2a2a2a;
     border: 1px solid #00ff00;
@@ -38,7 +43,12 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    align-items: center; /* Para alinhar na vertical*/ 
+    justify-items:center; /* Para alinhar na horizontal*/
 }
+
 .option:hover {
     background-color: #3a3a3a;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
