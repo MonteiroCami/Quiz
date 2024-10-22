@@ -1,0 +1,46 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #0a0a0a;
+    color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+
+table {
+    border-collapse: collapse; /* Remove o espaçamento entre as células */
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid #ff00ff; /* Adiciona a borda */
+    padding: 10px; /* Adiciona espaçamento interno */
+}
+
+.options {
+    margin-top: 25px;
+    display: grid;
+    text-align: left; /* Para alinhar o texto*/
+    gap: 10px;
+}
+
+.option {
+    background-color: #2a2a2a;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+}
+

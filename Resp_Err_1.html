@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta Errada</title>
+    <style>
+        body {
+            background-image: url(img1/panko.gif);
+            font-family: 'Arial', sans-serif;
+            color: #00FF00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            border: 3px solid #FF00FF;
+            padding: 40px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 20px #00FF00, 0 0 30px #FF00FF;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #FF00FF;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #00FF00;
+        }
+
+        .btn-retry {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #00FF00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-retry:hover {
+            background-color: #FF00FF;
+            color: #fff;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Lamento...</h1>
+        <p>Você não será bem-vindo para a próxima etapa.<br>Precisa de mais esforço para continuar!</p>
+        <button class="btn-retry" onclick="window.location.href='p_pergunta.html';">Tentar Novamente</button>
+    </div>
+</body>
+</html>
