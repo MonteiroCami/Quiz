@@ -1,0 +1,54 @@
+/* Estilos gerais */
+body {
+    background-image: url(img1/img3.jpg);
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(10, 10, 10, 0.9);
+    padding: 40px;
+    border: 2px solid #ff00ff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5), 0 0 40px rgba(15, 255, 15, 0.3);
+}
+
+h1 {
+    color: #0fff0f;
+    text-shadow: 0 0 10px #0fff0f, 0 0 20px #0fff0f;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #fff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+a.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #ff00ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #0fff0f;
+    box-shadow: 0 0 20px rgba(15, 255, 15, 0.7);
+    transform: scale(1.1);
+}
