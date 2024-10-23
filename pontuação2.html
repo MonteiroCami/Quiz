@@ -6,14 +6,14 @@
     <title>Pontuação Final</title>
     <style>
         body {
-            background-color: #000;
-            font-family: 'Arial', sans-serif;
-            color: #00FF00;
+            background-image: url('img1/city_cyberphunk.jpg'); /* Imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
         }
 
         .container {
@@ -23,30 +23,14 @@
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 0 20px #FF00FF, 0 0 30px #00FF00;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
         }
-
-        /* Usando ::before para criar uma camada com opacidade */
-        .container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('img1/cenario_cyber.gif');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.2; /* Apenas o gif de fundo será opaco */
-            z-index: -1;
-            border-radius: 10px;
-        }
-
 
         h1 {
             font-size: 3.5rem;
             color: #FF00FF;
             margin-bottom: 20px;
-            text-shadow:0 0 20px #FF00FF;
+            text-shadow: 0 0 20px #FF00FF;
         }
 
         p {
@@ -81,10 +65,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Você Falhou..</h1>
-        <p>Você completou apenas a fase 1, está com a pontuação de:</p>
-        <div class="score">1 Ponto</div>
-        <button class="btn-next" onclick="window.location.href='start.html';">Volte para o Inicio</button>
+        <h1>Você foi capturado na Rede...</h1>
+        <p>Sua jornada até aqui foi desafiadora. Você chegou à fase 2, acumulando:</p>
+        <div class="score">2 Pontos de Vida</div>
+        <p>O sistema não está a seu favor, mas a luta não acabou </p>
+        <button class="btn-next" onclick="window.location.href='start.html';">Reinicie a missão e volte ao início.</button>
     </div>
 </body>
 </html>
