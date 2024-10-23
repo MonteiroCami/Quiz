@@ -1,22 +1,27 @@
-
 body {
     font-family: 'Courier New', monospace;
+    display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center;     /* Centraliza verticalmente */
-    background-color: black;
-    display: flex;
-    height: 100vh; /*deixa o tamanho da pagina completa*/
+    background-image: url('img1/rain_backgroud_start.gif');
+    height: 100vh; /* Tamanho da página completa */
     margin: 0;
     padding: 0;
-    border: 15px solid;
-    border-image: linear-gradient(0deg, #ff00ff, #00ff00) 1;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.8); /* Caixa preta com um pouco de transparência */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5), 0 0 30px rgba(0, 255, 0, 0.5); /* Sombra */
+    text-align: center; /* Centraliza o texto dentro da caixa */
 }
 
 h1 {
     font-size: 50px;
     color: #ff00ff;
     text-shadow: 0 0 10px #ff00ff;
-    text-align: center;
+    margin: 0 0 20px 0; /* Margem inferior para espaçamento */
 }
 
 .start_button {
@@ -26,9 +31,23 @@ h1 {
     text-align: center;
     font-size: 16px;
     cursor: pointer;
+    color: #5a0730; /* Cor do texto do botão */
+    border-radius: 5px; /* Bordas arredondadas para o botão */
+    background-color: rgba(0, 0, 0, 0.2); /* Fundo semi-transparente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transições suaves */
 }
 
+.start_button:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+    background-color: rgba(68, 48, 67, 0.3); /* Mudança de cor no hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra maior ao passar o mouse */
+}
 
+.start_button:active {
+    transform: scale(0.95); /* Reduz ligeiramente o tamanho ao clicar */
+    box-shadow: 0 2px 5px rgba(68, 48, 67, 0.3); /* Sombra menor ao clicar */
+    background-color: rgba(41, 6, 6, 0.6); /* Muda a cor ao clicar */
+}
 
 
 
